@@ -73,6 +73,7 @@ button {
  
 }
 .galleryimage {
+    
     margin: 10px;
 }
 
@@ -86,14 +87,6 @@ footer {
     
 }
 
-/* .socialmedia {
-
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-evenly;   
-    margin: 0px 20px;
-    padding: 10%;
-} */
 
 .icon {
     height: 40px;
@@ -142,7 +135,12 @@ footer {
 .smalltext {
     display: none;
 }
-    
+   
+.gallery {
+   background-color: rgba(184, 184, 58, 0.322)  
+}
+
+
 
 nav div {
     width: 35px;

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="./contactStyle.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap" rel="stylesheet">
+</head>
+<header>
+    <a href="https://ashleighfiddler.github.io/hairSalonWebsite/" class="logo"></a> 
+        <img src="images/logo.png" height="200px" alt="logo">
+    </a>
+    <nav>
+        <a href="about.html" class="navlink">ABOUT</a>
+        <a href="contact.html"class="navlink">CONTACT</a>
+        <a href="blog.html" class="navlink">BLOG</a>
+        <article>
+            <div class="burger"></div>
+            <div class="burger"></div>
+            <div class="burger"></div>
+        </article>
+    </nav>    
+</header>
+<body>
+    <main> 
+    <form class="container" action="results.html" method="GET" enctype="multipart/form-data">
+      <section class="aboutyou">
+        <h3> About You</h3>
+        <div>
+         <label for="name">Name</label>
+         <input type="text" name="name" id="name" >
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" >
+        </div> 
+      </section>  
+      <section class="how">
+           <h3>Please check your favorites</h3>
+           <div>
+            <label for="Handlebar">Handlebar</label>
+            <input type="checkbox">
+          </div>
+          <div>
+           <label for="Fu Manchu">Fu Manchu</label>
+            <input type="checkbox">
+          </div>
+          <div>
+            <label for="Walrus">Walrus</label>
+            <input type="checkbox" >
+          </div>
+          <div>
+            <label for="Dali">Dali</label>
+            <input type="checkbox" >
+          </div>
+      </section>
+        <Section class="messageme">
+         <h3>Please share your most memorable experience with pistachios or moustaches</h3>
+         <textarea id="message" name="message" minlength="20" maxlength="500"></textarea>
+        <div>
+          <h4>Are you interested in joining our cult?</h4>
+          <label for="yes">Yes</label>
+          <input type="radio" name="reply" id="yes" value="yes">
+          <label for="no">No</label>
+          <input type="radio" name="reply" id="no" value="no">
+        </div>
+      </Section>
+      <section class="footer">
+          <h4>Do you love birthday surprises?</h4>
+          <label for="date"></label>
+          <input type="date" name="date" id="date" min="1919-06-10">
+          <div class="submit"> 
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+            <h4>So do we.</h4> 
+          </div>
+      </section>
+      <div>
+          <input type="hidden" name="hidden" value="hi">
+      </div>
+    </form>
+    <footer>
+        <p class="smalltext"> (C) Art&Execution 2020</p>
+        
+            <div class="icons">
+              <img class="icon" src="images/Facebook.png" alt="facebook icon">
+              <img class="icon" src="images/Twitter.png" alt="twitter icon">
+              <img class="icon" src="images/YouTube.png" alt="youtube icon">
+              <img class="icon" src="images/Instagram.png" alt="instagram icon">
+            </div>
+       
+    </footer>
+  </main>
+</body>
+</html>
