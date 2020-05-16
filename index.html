@@ -4,43 +4,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap" rel="stylesheet">
   <script src="index.js"></script>
-  <title>Mustaccio</title>
+  <title>Mustachio</title>
 </head>
 <header>
-    <a href="" alt="logo"
-        <img src="images.logo.jpg">
+    <a href="https://ashleighfiddler.github.io/hairSalonWebsite/" class="logo"></a> 
+        <img src="images/logo.png" height="200px" alt="logo">
     </a>
     <nav>
-        <a>About</a>
-        <a>Contact</a>
-        <a>Gallery</a>
-        <a>Blog</a>
-    </nav>
+        <a href="about.html" class="navlink">ABOUT</a>
+        <a href="contact.html"class="navlink">CONTACT</a>
+        <a href="blog.html" class="navlink">BLOG</a>
+        <article>
+            <div class="burger"></div>
+            <div class="burger"></div>
+            <div class="burger"></div>
+        </article>
+    </nav>    
 </header>
 <body>
-    <section>
-        <div>
-            <h2>Some words go here</h2>
-            <P>Some smaller words</P>
-            <P>Some smaller words</P>
-            <P>Some smaller words</P>
-            <a href=""> a link to something</a>
+       <section class="heroimage">
+        <div class="hero">
+            <h2>Like Moustaches?</h2>
+            <h3>Like Pistachios?</h3>
+            <h4>You found the right website.</h4>
+            <h4>We love them too.</h4>
+            <button href="gallery.html">Curious?</button>
         </div>
     </section>
-    <ul> 
-        <li></li>
-        <li></li>
-        <li></li>
+    <ul class=gallery> 
+        <li class=galleryimage> <a href="gallery.html" ></a> <img src="images/model1.jpg" height="200px" alt='A wistful dark-haired bearded man'> </li>
+        <li class="galleryimage nut"> <a href="gallery.html" ></a> <img src="images/nut2.jpg" height="200px" alt='A scattering of pistachios'> </li>
+        <li class=galleryimage><a href="gallery.html" ></a> <img src="images/model2.jpg" height="200px" alt='A bearded man wearing a cap'></li>
+        <li class="galleryimage nut"> <a href="gallery.html" ></a> <img src="images/nut1.jpg" height="200px" alt='A cluster of pistachios'> </li>
+        <li class=galleryimage><a href="gallery.html" ></a> <img src="images/model3.jpg" height="200px" alt='A smiling moustacchiod hispter'></li>
     </ul>
 </body>    
     <footer>
-        <p> (C) Art&Execution 2020</p>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+        <p class="smalltext"> (C) Art&Execution 2020</p>
+        
+            <div class="icons">
+              <img class="icon" src="images/Facebook.png" alt="facebook icon">
+              <img class="icon" src="images/Twitter.png" alt="twitter icon">
+              <img class="icon" src="images/YouTube.png" alt="youtube icon">
+              <img class="icon" src="images/Instagram.png" alt="instagram icon">
+            </div>
+       
     </footer>
 
 

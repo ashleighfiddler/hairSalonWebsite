@@ -1,0 +1,173 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 20px;
+    
+}
+header {
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid black;
+    
+}
+.logo {
+    padding-top: 5%
+}
+ nav {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     /* background-color: cadetblue; */
+     height: 60px; 
+     color: rgb(183,184,58);
+     margin: 40px ;
+     
+     
+ }
+ nav a {
+     color: rgb(183,184,58);
+     font-size: 18pt;
+     padding: 40px 60px;
+ }
+ 
+ section {
+    padding: 50px;
+    display: flex;     
+    justify-content: center;
+    width: auto;
+      
+ 
+ }
+ .hero {
+     /* padding-left: 45%; */
+     padding: 40px;
+     background-color: whitesmoke;
+     opacity: .5;
+     height: 400px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     
+ }
+
+ /* .heroimage {
+     color: whitesmoke
+ } */
+ ul {
+    list-style-type: none;
+    
+}
+button {
+    background-color:  rgb(183,184,58);
+    padding: 5% 0%;
+}
+.gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+ 
+}
+.galleryimage {
+    margin: 10px;
+}
+
+
+footer {
+    background-color: rgb(183,184,58);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* .socialmedia {
+
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;   
+    margin: 0px 20px;
+    padding: 10%;
+} */
+
+.icon {
+    height: 40px;
+    margin: 5px;
+
+}
+.smalltext {
+    margin: 20px;
+    padding: 20px;
+}
+
+
+@media screen and (min-width: 300px) {
+    .heroimage { 
+    background-image: url(images/heroimage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+
+    }
+
+    section {
+        justify-content: flex-end;
+        text-align: center;
+    }
+
+    footer{
+        justify-content: space-between;
+    }
+
+    .icons {
+    margin: 20px;
+    padding: 2px;
+    }
+}
+
+
+@media screen and (max-width: 720px) {
+/* nav {
+    display: block;
+    
+} */
+.navlink {
+    display: none;
+}
+
+.smalltext {
+    display: none;
+}
+    
+
+nav div {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(183,184,58);
+    margin: 6px 0;
+  
+      }
+
+section div {
+    padding: 5%;
+    }  
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }   
+    footer{
+        justify-content: center;
+    }     
+}
+
+@media screen and (max-width: 1200px) {
+   
+    .nut {
+        display: none;
+    }
+}
