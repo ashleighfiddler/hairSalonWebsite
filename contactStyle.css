@@ -52,13 +52,7 @@ section div {
 .container {
     justify-content: center;
     text-align:center;
-    grid-template-areas:
-    "aboutyou"
-    "how"    
-    "messageme"
-    "footer"
 }
-
     .aboutyou {
         grid-area: aboutyou;
         
@@ -96,15 +90,19 @@ section div {
         padding: 20px;
     }
     
+    .icons {
+        margin: 20px;
+        padding: 2px;
+    }
      
-
-@media screen and (min-width: 450px) {
-    .container {
+.container {
         grid-template-areas:
         "aboutyou how"    
         "messageme footer"
         
     } 
+@media screen and (min-width: 450px) {
+    
     footer{
         justify-content: space-between;
         }  
@@ -115,10 +113,14 @@ section div {
   
 }
 @media screen and (max-width: 720px) {
-    /* nav {
-        display: block;
+    .container {
+        grid-template-areas:
+        "aboutyou"
+        "how"  
+        "messageme"
+        "footer"
         
-    } */
+    }
     .navlink {
         display: none;
     }
@@ -133,7 +135,9 @@ section div {
         margin: 6px 0;
       
           }
-  
+          footer{
+            justify-content: center;
+            }  
 }
 
 @media (min-width: 996px) {
