@@ -1,0 +1,178 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 20px;
+    text-align: center;
+    
+}
+header {
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid black;
+    
+}
+.logo {
+    padding-top: 5%
+}
+ nav {
+     display: flex;     
+     align-items: center;
+     /* background-color: cadetblue; */
+     height: 60px; 
+     color: rgb(183,184,58);
+     margin: 40px ;
+     
+     
+ }
+ .navlink {
+     color: rgb(183,184,58);
+     font-size: 18pt;
+     padding: 40px 60px;
+     text-align: center;
+ }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 24%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+  }
+
+  
+  .container {
+    position: relative;
+    width: 100%;   
+    max-width: 200px;
+    height: auto;
+  
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(186, 152, 0, 0.479);
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+   
+  .text {
+    color: white;
+    font-size: clamp(1.1vw, 1px, 2.2vw);
+    /* font-size: 18px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  /* Footer code starts here  */
+
+  footer {
+    background-color: rgb(183,184,58);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.icon {
+    height: 40px;
+    margin: 5px;
+
+}
+.smalltext {
+    margin: 20px;
+    padding: 20px;
+}
+
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+
+  @media screen and (min-width: 450px) {
+    
+    footer{
+        justify-content: space-between;
+        }  
+        
+    .icons {
+        margin: 20px;
+        padding: 2px;
+    }
+  
+}
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      Justify-content: center;
+    }
+      nav div {
+        width: 35px;
+        height: 5px;
+        background-color: rgb(183,184,58);
+        margin: 6px 0;
+      
+          }
+          .navlink {
+            display: none;
+        }
+        
+        .smalltext {
+            display: none;
+        }
+        footer{
+            justify-content: center;
+            }      
+    }
+          
+  
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+    
+    header {
+      display: flex;
+      align-items: center;
+      Justify-content: center;
+    }
+   h2 {
+     display: none;
+     }
+  }

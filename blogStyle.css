@@ -1,8 +1,4 @@
-body {
-    font-family: 'Roboto Condensed', sans-serif;
-    margin: 20px;
-    
-}
+
 header {
     /* background-color: aqua; */
     display: flex;
@@ -13,6 +9,7 @@ header {
     border-bottom: 2px solid black;
     
 }
+
 .logo {
     padding-top: 5%
 }
@@ -32,49 +29,42 @@ header {
      font-size: 18pt;
      padding: 40px 60px;
  }
- 
- section {
-    padding: 50px;
-    display: flex;     
-    justify-content: center;
-    width: auto;
-      
- 
- }
- .hero {
-     /* padding-left: 45%; */
-     padding: 40px;
-     background-color: whitesmoke;
-     opacity: .5;
-     height: 400px;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     
- }
 
-
- ul {
-    list-style-type: none;
+ body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 20px;
+    text-align: center;
+ }
+ main {
     
-}
-button {
-    background-color: rgb(183,184,58);
-  
-    margin-top: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-}
-.gallery {
+    }
+
+ h1 {
+    display: inline-block;  
+    background-color: rgb(183,184,58);
+    padding: 20px; 
+ }
+
+.blog {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     align-items: center;
-    padding: 20px;
- 
+    border: 2px solid black;
+    width: 60%;
+    padding: 1%;
+    margin-bottom: 2%;
 }
-.galleryimage {    
-    margin: 10px;
-}
+
+.blogimage {   
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+      }
+
 
 
 footer {
@@ -99,12 +89,7 @@ footer {
 
 
 @media screen and (min-width: 300px) {
-    .heroimage { 
-    background-image: url(images/heroimage.jpg);
-    background-size: cover;
-    background-repeat: no-repeat; 
-
-    }
+  
 
     section {
         justify-content: flex-end;
@@ -119,14 +104,25 @@ footer {
     margin: 20px;
     padding: 2px;
     }
+
+  
+}
+@media screen and (min-width: 720px) {
+ .blogpost {
+     padding-left: 10%;
+ }
+ .blogimage {
+    padding-left: 10%;
+}
 }
 
-
 @media screen and (max-width: 720px) {
-/* nav {
-    display: block;
-    
-} */
+ .blog {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 .navlink {
     display: none;
 }
@@ -135,11 +131,6 @@ footer {
     display: none;
 }
    
-.gallery {
-   background-color: rgba(184, 184, 58, 0.322)  
-}
-
-
 
 nav div {
     width: 35px;
@@ -152,11 +143,8 @@ nav div {
 section div {
     padding: 5%;
     }  
-    .gallery {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }   
+ 
+    
     footer{
         justify-content: center;
     }     
